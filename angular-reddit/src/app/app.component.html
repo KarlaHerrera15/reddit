@@ -14,3 +14,10 @@
     </button>
   </form>
 </div>
+<div class="container">
+  
+  @for (art of sortedArticles(); track art) {
+    <app-article [article]="art"></app-article>
+}
+</div>
+
